@@ -57,7 +57,7 @@ require $nav; ?>
 
 <div class="container-fluid home" id="top">
     <div class="container search">
-        <nav class="animated slideInUp wow">
+        <nav class="animated slideInUp wow" style="margin-bottom:5vh;">
             <div class="nav-wrapper">
                 <form method="GET" action="search.php">
                     <div class="input-field">
@@ -66,7 +66,7 @@ require $nav; ?>
                     </div>
 
                     <div class="center-align">
-                        <button type="submit" name="search" class="blue waves-light miaw waves-effect btn hide">Search</button>
+                        <button type="submit" name="search" class="red waves-light miaw waves-effect btn hide">Search</button>
                     </div>
                 </form>
             </div>
@@ -113,8 +113,8 @@ require $nav; ?>
                         <div class="card-image">
                             <a href="product.php?id=<?= $id_best;  ?>">
                             <img src="src/img/products/<?= $thumbnail_best; ?>" style="max-height:35vh;"></a>
-                            <span class="card-title blue-text"><?= $name_best; ?></span>
-                            <a href="product.php?id=<?= $id_best; ?>" class="btn-floating blue halfway-fab waves-effect waves-light right"><i class="material-icons">add</i></a>
+                            <span class="card-title red-text" style="font-size:25px;font-weight:700"><?= $name_best; ?></span>
+                            <a href="product.php?id=<?= $id_best; ?>" class="btn-floating yellow halfway-fab waves-effect waves-light right"><i class="material-icons">add</i></a>
                         </div>
                         <div class="card-content">
                             <div class="container">
@@ -138,7 +138,8 @@ require $nav; ?>
 
     </div>
 </div>
-
+<img src="src/img/banner.jpg" alt="" style="max-height:60vh;min-width:98vw;" >
+    
 <div class="container-fluid center-align categories">
     <a href="#category" class="button-rounded btn-large waves-effect waves-light">Categories</a>
     <div class="container" id="category">
@@ -160,8 +161,9 @@ require $nav; ?>
                     <div class="col s12 m4">
                         <div class="card hoverable animated slideInUp wow">
                             <div class="card-image">
-                                <a href="category.php?id=<?= $id_category; ?>"><img src="src/img/<?= $icon_category; ?>.jpg" alt=""></a>
-                                <span class="card-title black-text"><?= $name_category; ?></span>
+   <a href="category.php?id=<?= $id_category; ?>">
+   <img src="src/img/<?= $icon_category; ?>.jpg" alt="" style="max-height:25vh;max-width:30vw;"></a>
+                                <span class="card-title red-text" style="font-size:20px;font-weight:700"><?= $name_category; ?></span>
                             </div>
                         </div>
                     </div>
@@ -171,20 +173,20 @@ require $nav; ?>
         </div>
     </div>
 </div>
-
+<img src="src/img/banner3.jpg" alt="" style="max-height:60vh;min-width:98vw;" >
 
 <div class="container-fluid about" id="about">
     <div class="container">
         <div class="row">
-            <div class="col s12 m6">
+            <div class="col s12 m4">
                 <div class="card animated slideInUp wow">
                     <div class="card-image">
-                        <img src="src/img/about.jpg" alt="">
+                        <img src="src/img/products/7.jpg" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="col s12 m6">
+            <div class="col s12 m8">
                 <h3 class="animated slideInUp wow">About Us</h3>
                 <div class="divider animated slideInUp wow"></div>
                 <p class="animated slideInUp wow">This project aims to implement an e-commerce website which enables
@@ -220,20 +222,20 @@ require $nav; ?>
                     <textarea id="icon_prefix2" class="materialize-textarea" type="text" name="text" rows="4"" style=" resize: vertical;min-height: 8rem;" required></textarea>
                     <label for="icon_prefix2">Your message</label>
                 </div>
-                <!-- Go to https://postmail.invotes.com/ to get an access token -->
+         
                 <input type="hidden" name="access_token" value="" />
                 <input type="hidden" name="success_url" value="." />
                 <input type="hidden" name="error_url" value=".?err=1" />
                 <div class="center-align">
                     <button id="submit_form" type="submit" name="contact" value="Send" class="button-rounded btn-large waves-effect waves-light">Submit</button>
                 </div>
-                <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+                <p>Powered by <a href="" target="_blank">Sneaker World</a></p>
             </div>
         </form>
     </div>
 </div>
 
-
+<img src="src/img/banner2.jpg" alt="" style="max-height:60vh;min-width:98vw;" >
 
 <?php
 require 'includes/secondfooter.php';

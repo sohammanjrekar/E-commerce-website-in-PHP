@@ -88,7 +88,7 @@ require $nav;?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">Home</a>
+                    <a href="index.php" class="breadcrumb">Home</a>
                     <a href="cart" class="breadcrumb">Cart</a>
                     <a href="checkout" class="breadcrumb">Checkout</a>
                     <a href="final" class="breadcrumb">Thank you</a>
@@ -107,7 +107,7 @@ require $nav;?>
         <div class="col s12 m6">
             <div class="card center-align">
                 <div class="card-image">
-                    <img src="src/img/thanks.png" class="responsive-img" alt="">
+                    <img src="src/img/thanks.png" class="responsive-img" alt="" style="max-height:40vh;">
                 </div>
                 <div class="card-content center-align">
                     <h5>Thank you for your purchase</h5>
@@ -117,7 +117,7 @@ require $nav;?>
 
             <div class="center-align">
                 <a href="details.php" class="button-rounded blue btn waves-effects waves-light">Details</a>
-                <a href="index" class="button-rounded btn waves-effects waves-light">Home</a>
+                <a href="index.php" class="button-rounded btn waves-effects waves-light">Home</a>
             </div>
         </div>
         <div class="col s12 m3">

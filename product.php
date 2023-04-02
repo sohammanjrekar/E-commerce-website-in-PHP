@@ -22,7 +22,7 @@ $id_product =$_GET['id'];
       <nav>
         <div class="nav-wrapper">
           <div class="col s12">
-            <a href="index" class="breadcrumb">Home</a>
+            <a href="index.php" class="breadcrumb">Home</a>
             <a href="product.php?id=<? $id_product; ?>" class="breadcrumb">Product</a>
           </div>
         </div>
@@ -54,24 +54,24 @@ $id_product =$_GET['id'];
               $id_pic = $rowproduct['id_picture'];
               $description = $rowproduct['description'];
               $thumbnail_product = $rowproduct['thumbnail']; }}?>
-            <img class="materialboxed" width="650" src="products/<?= $thumbnail_product; ?>" alt="">
+            <img class="materialboxed" width="650" src="src/img/products/<?= $thumbnail_product; ?>" alt="" style="max-height:65vh;">
           </div>
         </div>
        <div class="row">
          <?php
 
          //get categories
-           $querypic = "SELECT picture, id_product FROM pictures WHERE id_product = '$id_pic'";
+           $querypic = "SELECT thumbnail FROM product WHERE id = '$id_pic'";
            $total = $connection->query($querypic);
            if ($total->num_rows > 0) {
            // output data of each row
            while($rowpic = $total->fetch_assoc()) {
-             $pics = $rowpic['picture'];
+             $pics = $rowpic['thumbnail'];
           ?>
            <div class="col s12 m4">
              <div class="card hoverable">
                <div class="card-image">
-                 <img class="materialboxed" width="650" src="src/img/productsimg/<?= $pics; ?>" alt="">
+                 <img class="materialboxed" width="650" src="src/img/products/<?= $pics; ?>" alt="">
                </div>
              </div>
            </div>
@@ -79,13 +79,13 @@ $id_product =$_GET['id'];
        </div>
      </div>
 
-     <div class="col s12 m6">
+     <div class="col s12 m6" style="font-size: 16px;">
        <form method="post">
        <h2><?= $name_product; ?></h2>
        <div class="divider"></div>
        <div class="stuff">
         <h3 class="woow">Price</h3>
-        <h5>$ <?= $price_product; ?></h5>
+        <h5>₹ <?= $price_product; ?></h5>
            <p><?= $description; ?></p>
           <div class="input-field col s12">
             <i class="material-icons prefix">shopping_basket</i>
@@ -98,7 +98,7 @@ $id_product =$_GET['id'];
             if (isset($_POST['buy'])) {
               // check error here
                if (!isset($_SESSION['logged_in'])) {
-                 echo "<meta http-equiv='refresh' content='0;url=./sign' />";
+                 echo "<meta http-equiv='refresh' content='0;url=./sign.php' />";
                }
 
                else {

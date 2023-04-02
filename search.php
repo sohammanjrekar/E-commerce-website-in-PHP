@@ -29,7 +29,7 @@ else {
       <nav>
         <div class="nav-wrapper">
           <div class="col s12">
-            <a href="index" class="breadcrumb">Home</a>
+            <a href="index.php" class="breadcrumb">Home</a>
             <a href="search" class="breadcrumb">Search</a>
           </div>
         </div>

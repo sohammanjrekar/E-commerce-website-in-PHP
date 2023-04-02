@@ -213,6 +213,13 @@
             'overflow': 'visible'
         });
     })
+            $('.carousel.carousel-slider').carousel(
+                {
+                    fullWidth: true,
+                    indicators: true
+                }
+            );
+       
 
 </script>
 </body>

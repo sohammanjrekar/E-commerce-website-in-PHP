@@ -27,9 +27,9 @@ require $nav;?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">Home</a>
-                    <a href="cart" class="breadcrumb">Cart</a>
-                    <a href="checkout" class="breadcrumb">Checkout</a>
+                    <a href="index.php" class="breadcrumb">Home</a>
+                    <a href="cart.php" class="breadcrumb">Cart</a>
+                    <a href="checkout.php" class="breadcrumb">Checkout</a>
                 </div>
             </div>
         </nav>
@@ -38,7 +38,7 @@ require $nav;?>
 
 <div class="container checkout">
     <div class="card pay">
-        <form method="post" action="final">
+        <form method="post" action="final.php">
             <div class="row">
 
                 <div class="input-field col s6">

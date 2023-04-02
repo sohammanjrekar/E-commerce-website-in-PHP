@@ -19,7 +19,7 @@ require $nav; ?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">E-Commerce</a>
+                    <a href="index.php" class="breadcrumb">E-Commerce</a>
                     <a href="orders" class="breadcrumb">Orders</a>
                 </div>
             </div>
@@ -61,11 +61,6 @@ require $nav; ?>
             <?php }}  ?>
         </tbody>
     </table>
-    <div class="center-align">
-        <br>
-        <a href="downloadorder.php?id=<?= $_SESSION['id']; ?>"><button type="submit" name="buy" class="btn-large meh button-rounded waves-effect waves-light ">Download</button></a>
-        <br><br>
-    </div>
 </div>
 
 <?php require 'includes/footer.php'; ?>

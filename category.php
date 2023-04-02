@@ -21,7 +21,7 @@ require $nav; ?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">Home</a>
+                    <a href="index.php" class="breadcrumb">Home</a>
                     <a href="category.php?id=<?= $id_category; ?>" class="breadcrumb">Category</a>
                 </div>
             </div>
@@ -95,7 +95,7 @@ require $nav; ?>
                                     </div>
                                     <div class="card-action">
                                         <div class="container-fluid">
-                                            <h5 class="white-text"><?= $price_product; ?> $</h5>
+                                            <h5 class="white-text"><?= $price_product; ?> ₹</h5>
                                         </div>
                                     </div>
                                 </div>
